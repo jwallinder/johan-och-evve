@@ -37,12 +37,17 @@
           font-size: 3.5rem;
         }
       }
-      body {
-        background: url(assets/brand/evve-johan.jpg) no-repeat center center fixed; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
+      .background-image {
+        background: url('assets/brand/evve-johan.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        z-index: -1;
       }
       .dropshadow {
         text-shadow: 3px 3px 8px #000000;
@@ -69,7 +74,7 @@
           </nav>
         </div>
       </header>
-
+      <div class="background-image"></div>
       <main class="px-3 dropshadow">
         <div class="container my-5 bg-opacity-25 bg-dark">
           <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-lg">
